@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Neelam Yadav</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <noscript>Browser JavaScript not available.</noscript>
+        <link rel = "stylesheet" href = "style.css">
+        <script src="https://kit.fontawesome.com/f656d729fb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id = "header">
+            <div class = "container">
+                <nav>
+                    <ul id = "sidemenu">
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick = "closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" id = "open-menu-button" onclick = "openmenu()"></i>
+                </nav>
+                <div class = "header-text">
+                    <p>ACCOUNTING | BOOKKEEPING | FINANCIAL ANALYSIS</p>
+                    <h1>Hello, I am <span> NEELAM YADAV </span> <br> from India</h1>
+                </div>
+            </div>
+        </div>
+        <div class = "about" id = "about">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "about-col-1">
+                        <img src = "Images/Neelam.png">
+                    </div>
+                    <div class = "about-col-2">
+                        <h1 class = "sub-title">
+                            About Me
+                        </h1>
+                        <p>
+                           I am an MBA student with a background in finance and market research.
+						   Passionate about financial analysis, budgeting, and strategic planning, 
+						   I have interned at Coal India Limited and worked at Mapple Business Solutions.
+						   Eager to learn and grow, I aim to contribute effectively in dynamic financial environments. 
+                            
+             
+                        </p>
+                        <div class = "tab-titles">
+                            <p class = "tab-links active-link" onclick = "opentab('skills')">
+                                Skills
+                            </p>
+                            <p class = "tab-links" onclick = "opentab('experience')">
+                                Experience
+                            </p>
+                            <p class = "tab-links" onclick = "opentab('education')">
+                                Education
+                            </p>
+                        </div>
+                        <div class = "tab-contents active-tab" id = "skills">
+                            <ul>
+                                <li>
+                                    <span>
+                                        communication
+                                    </span>
+                                    <br>
+                                    
+                                </li>
+                                <li>
+                                    <span>
+                                        Canva Designing
+                                    </span>
+                                    <br>
+                                    
+                                </li>
+                                <li>
+                                    <span>
+                                        social media marketing
+                                    </span>
+                                    <br>
+                                    
+                                </li>
+                                <li>
+                                    <span>
+                                        Microsoft Word
+                                    </span>
+                                    <br>
+                                    
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "tab-contents" id = "experience">
+                            <ul>
+                                <li>
+                                    <span>
+                                        Market Research Analyst - mapple business solution 
+                                    </span>
+                                    <span class = "experience-time">
+                                        (may2023-may2024)
+                                    </span>
+                                    <br>
+                                    
+                                </li>
+                                <li>
+                                    <span>
+                                        Finance Intern - Coal India Limited
+                                    </span>
+                                    <span class = "experience-time">
+                                        (June2022 - July2022)
+                                    </span>
+                                    <br>
+                               
+                                </li>
+    
+                            </ul>
+                        </div>
+                        <div class = "tab-contents" id = "education">
+                            <ul>
+                                <li>
+                                    <span>
+                                        Class X
+                                    </span>
+                                    <br>
+                                    63.8% in Army Public school Dipatoli Cantt, Ranchi
+                                </li>
+                                <li>
+                                    <span>
+                                        Class XII
+                                    </span>
+                                    <br>
+                                    75.8% in Army Public School, Dipatoli Cantt, Ranchi
+                                </li>
+                                <li>
+                                    <span>
+                                        BBA (finanace)
+                                    </span>
+                                    <br>
+                                    Dr. Shayama Prasad Mukherjee University, Ranchi
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class = "sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>32neelam yadav@gmail.com</p>
+                        <p><i class="fa-solid fa-mobile"></i>+91-9608355467</p>
+                        <div class="social-icons">
+                            <a href="https://google.com/"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="Images/Neelam Yadav - CV.pdf" download class = "btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type = "text" name = "Name" placeholder = "Your Name" required>
+                            <input type = "email" name = "E-mail" placeholder = "Your Email" required>
+                            <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
+                            <button type = "submit" class = "btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2023 </p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            var openmenubutton = document.getElementById("open-menu-button");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+                openmenubutton.style.display = "none";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+                openmenubutton.style.display = "block";
+            }
+        </script>
+    </body>
+</html>
